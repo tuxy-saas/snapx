@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompressX - Intelligent Image Compression</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">CompressX</div>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#compress">Compress</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Intelligent Image Compression</h1>
+            <p>Optimize your visuals with cutting-edge AI technology.</p>
+            <a href="#compress" class="cta-button">Start Compressing</a>
+        </div>
+        <div class="hero-image">
+            <img src="/api/placeholder/800/500" alt="CompressX visualization">
+        </div>
+    </section>
+
+    <main id="compress">
+        <div class="compress-container">
+            <h2>Compress Your Images</h2>
+            <p>Drag and drop your images or click to upload</p>
+            <div id="drop-zone" class="drop-zone">
+                <input type="file" id="upload" accept="image/*" multiple />
+                <p>Drop files here or click to upload</p>
+            </div>
+        </div>
+        <div id="controls">
+            <div id="slider-container">
+                <label for="sizeMultiplier">Compression Level: <span id="sliderValue">1.0</span>x</label>
+                <input type="range" id="sizeMultiplier" min="0.1" max="1.0" step="0.1" value="1.0">
+            </div>
+            <div id="format-container">
+                <label for="format-select">Output Format:</label>
+                <select id="format-select">
+                    <option value="image/jpeg">JPEG</option>
+                    <option value="image/png">PNG</option>
+                </select>
+            </div>
+            <button id="compress-btn" class="btn">Compress Images</button>
+        </div>
+        <div id="bulk-preview"></div>
+        <div id="compression-info"></div>
+        <button id="download-btn" class="btn" style="display: none;">Download Compressed Images</button>
+    </main>
+
+    <section id="features" class="features">
+        <h2>Why Choose CompressX?</h2>
+        <div class="feature-list">
+            <div class="feature-card">
+                <img src="/api/placeholder/100/100" alt="AI-powered compression">
+                <h3>AI-Powered Compression</h3>
+                <p>Our advanced algorithms ensure optimal compression without quality loss.</p>
+            </div>
+            <div class="feature-card">
+                <img src="/api/placeholder/100/100" alt="Batch processing">
+                <h3>Batch Processing</h3>
+                <p>Compress multiple images simultaneously, saving you valuable time.</p>
+            </div>
+            <div class="feature-card">
+                <img src="/api/placeholder/100/100" alt="Format flexibility">
+                <h3>Format Flexibility</h3>
+                <p>Choose between JPEG and PNG formats to suit your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-logo">CompressX</div>
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#compress">Compress</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
